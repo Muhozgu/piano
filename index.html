@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piano Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Piano Playground</h1>
+
+    <div class="controls">
+      <label>
+        <input type="checkbox" id="sustainCheckbox">
+        Sustain
+      </label>
+
+      <label>
+        Volume
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+      </label>
+
+      <button id="recordBtn">Record</button>
+      <button id="playbackBtn">Play Rec</button>
+      <button id="clearBtn">Clear Rec</button>
+
+      <span id="eventCount">Events: 0</span>
+    </div>
+
+    <div id="piano"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
